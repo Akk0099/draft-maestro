@@ -1,13 +1,11 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import './App.css';
-import Header from './Header';
-import Draft from "./Draft";
-import ChampionList from "./ChampionList";
+import Header from './components/Header';
+import Draft from "./pages/Draft";
+import ChampionList from "./pages/ChampionList";
 
 function App() {
   return (
-    <div className="App">
       <BrowserRouter>
       <Header></Header>
       <Routes>
@@ -15,7 +13,6 @@ function App() {
           <Route path='champion-list' element={<ChampionList />} />
       </Routes>
     </BrowserRouter>
-    </div>
   );
 }
 
